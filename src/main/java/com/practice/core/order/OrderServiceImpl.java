@@ -1,11 +1,11 @@
 package com.practice.core.order;
 
 import com.practice.core.discount.DiscountPolicy;
-import com.practice.core.discount.FixDiscountPolicy;
 import com.practice.core.member.Member;
 import com.practice.core.member.MemberRepository;
-import com.practice.core.member.MemoryMemberRepository;
+import org.springframework.stereotype.Component;
 
+@Component
 public class OrderServiceImpl implements OrderService {
 
   private final MemberRepository memberRepository;
